@@ -1,0 +1,9 @@
+[package]
+name = "ejemplo_repo"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+name="ejemplo_repo"
+path="src/lib.rs"
