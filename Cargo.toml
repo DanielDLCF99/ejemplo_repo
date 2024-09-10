@@ -3,7 +3,15 @@ name = "ejemplo_repo"
 version = "0.1.0"
 edition = "2021"
 
+description = "Crate de prueba."
+
+license = "MIT"
+
 [lib]
 crate-type = ["cdylib"]
 name="ejemplo_repo"
 path="src/lib.rs"
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
